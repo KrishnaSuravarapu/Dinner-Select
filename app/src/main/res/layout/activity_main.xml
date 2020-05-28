@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Fooddisplayer"
+        android:layout_width="388dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/amarante"
+        android:text="Indian"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dd_logo" />
+
+    <Button
+        android:id="@+id/decideBtn"
+        style="@android:style/Widget.Material.Button"
+        android:layout_width="199dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#1ed760"
+        android:fontFamily="@font/acme"
+        android:text="Decide Dinner"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adddishbtn" />
+
+    <AutoCompleteTextView
+        android:id="@+id/newdish"
+        android:layout_width="164dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/amarante"
+        android:hint="Add New Dish"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#C1FFFFFF"
+        android:textCursorDrawable="@color/design_default_color_secondary_variant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fooddisplayer" />
+
+    <Button
+        android:id="@+id/adddishbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#1ed760"
+        android:fontFamily="@font/acme"
+        android:text="ADD DISH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newdish" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
